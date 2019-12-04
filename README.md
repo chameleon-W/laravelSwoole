@@ -27,10 +27,13 @@ $ composer require chameleon-w/laravelswoole
         SWOOLE_LISTEN_HOST=0.0.0.0 //监听的ip
         SWOOLE_LISTEN_PORT=9501    //监听的端口
         
-    3.访问 http://127.0.0.1:9501
+    3.命令行中 php artisan extend:swoole start
+    
+    4.访问 http://127.0.0.1:9501
 
 
 ## 尚未完善
     1. 当前为demo版本 请不要用于生产环境
-    2. 代码热加载
+    2. swoole服务的关闭、重启、热加载
     3. WebSocket封装
+    
