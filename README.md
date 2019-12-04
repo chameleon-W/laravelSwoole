@@ -1,28 +1,36 @@
-<h1 align="center"> /laravelSwoole </h1>
+<h1 align="center"> laravelSwoole </h1>
 
-<p align="center"> simple swoole component for laravel.</p>
+<p align="center"> 基于laravel组件化开发的简易版swoole组件.</p>
 
 
-## Installing
+## 安装环境
+    1.PHP >= 7.2
+    2.Composer
+    3.laravel >= 5.8
+    4.Swoole >=4.4.x
+
+
+## 安装
 
 ```shell
-$ composer require chameleonw//laravelSwoole -vvv
+$ composer require chameleon-w/laravelswoole
 ```
 
-## Usage
+## 配置
+    1.在config/app.php中注册 SwooleServiceProvider
+        'providers' => [
+            // ...
+           \ChameleonW\LaravelSwoole\Providers\SwooleServiceProvider::class,
+        ],
+        
+    2.在env中配置
+        SWOOLE_LISTEN_HOST=0.0.0.0 //监听的ip
+        SWOOLE_LISTEN_PORT=9501    //监听的端口
+        
+    3.访问 http://127.0.0.1:9501
 
-TODO
 
-## Contributing
-
-You can contribute in one of three ways:
-
-1. File bug reports using the [issue tracker](https://github.com/chameleonw//laravelSwoole/issues).
-2. Answer questions or fix bugs on the [issue tracker](https://github.com/chameleonw//laravelSwoole/issues).
-3. Contribute new features or update the wiki.
-
-_The code contribution process is not very formal. You just need to make sure that you follow the PSR-0, PSR-1, and PSR-2 coding guidelines. Any new code contributions must be accompanied by unit tests where applicable._
-
-## License
-
-MIT
+## 尚未完善
+    1. 当前为demo版本 请不要用于生产环境
+    2. 代码热加载
+    3. WebSocket封装
