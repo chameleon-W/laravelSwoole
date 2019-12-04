@@ -1,0 +1,17 @@
+{
+    "name": "chameleon-w\/laravelSwoole",
+    "description": "simple swoole component for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chameleon-w",
+            "email": "chameleon_w@yeah.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ChameleonW\\LaravelSwoole\\": "src"
+        }
+    }
+}
